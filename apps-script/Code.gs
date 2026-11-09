@@ -221,6 +221,11 @@ const UTM_SHORT = {
   'U-08': 'https://clck.ru/3WvMGE'
 };
 
+// Адрес и дата публикации по строкам реестра
+const UTM_PUB = {
+  'U-07': ['https://t.me/glina_ceramics_studio/2', '09.11.2026']
+};
+
 /* Запустить один раз: создаёт лист utm. Полная ссылка (столбец I) — формула из столбцов меток,
    адрес сайта — в ячейке O1. Адрес и дата публикации заполняются вручную. */
 function setupUtmSheet() {
@@ -232,7 +237,8 @@ function setupUtmSheet() {
   sheet.getRange('O1').setValue(UTM_SITE);
   sheet.setFrozenRows(1);
 
-  const values = UTM_ROWS.map(function (r) { return r.slice(0, 8).concat(['', UTM_SHORT[r[0]] || '', '', '', r[8]]); });
+  const values = UTM_ROWS.map(function (r) { const pub = UTM_PUB[r[0]] || ['', ''];
+    return r.slice(0, 8).concat(['', UTM_SHORT[r[0]] || '', pub[0], pub[1], r[8]]); });
   sheet.getRange(2, 1, values.length, UTM_HEADERS.length).setNumberFormat('@').setValues(values);
 
   // Оператор & вместо СЦЕПИТЬ: формула не зависит от разделителя аргументов (, или ;) в настройках таблицы
