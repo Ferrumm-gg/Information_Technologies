@@ -55,4 +55,6 @@
 Снимки каждого события сохраняются в `screens/ga4/<имя события>.png`.
 
 **Статус:** события проверены локально подменой `gtag` (параметры приходят правильные).
-Ресурс GA4 «ГЛИНА — сайт» (`G-BGHCC4TERY`) создан, тег стоит на всех 11 страницах. 09.11.2026 первый визит с телефона дошёл до Realtime: `page_view`, `first_visit`, `session_start` — снимок [`screens/ga4/realtime-first-visit.jpg`](../screens/ga4/realtime-first-visit.jpg). Свои события и снимки DebugView ещё не сделаны.
+Ресурс GA4 «ГЛИНА — сайт» (`G-BGHCC4TERY`) создан, тег стоит на всех 11 страницах. 09.11.2026 первый визит с телефона дошёл до Realtime: `page_view`, `first_visit`, `session_start` — снимок [`screens/ga4/realtime-first-visit.jpg`](../screens/ga4/realtime-first-visit.jpg). 
+
+**Ограничение.** Сервер Google-тега (googletagmanager.com) из домашней сети и с мобильного интернета исполнителя не открывается (ошибка SSL), VPN нет. Поэтому в ресурс приходят только визиты через другие сети: 09.11.2026 в Realtime были `page_view`, `first_visit`, `session_start`, `scroll` (снимок `screens/ga4/realtime-first-visit.jpg`). Заявки при этом доходят до таблицы: 09.11.2026 с компьютера и с телефона по LTE пришли строки «миша» и «Паа» — но событий `generate_lead` в GA4 от них нет. Свои события проверены в коде подменой `gtag` (параметры совпадают с таблицей выше); снимки DebugView, ключевые события и отчёты требуют доступа к Google-тегу.
