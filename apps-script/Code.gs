@@ -192,6 +192,51 @@ function setupSheet() {
   sheet.autoResizeColumns(1, HEADERS.length);
 }
 
+/* ---------------- Реестр UTM-ссылок (лист utm, раздел 5.3) ---------------- */
+
+const UTM_SITE = 'https://tz-26-studiya-keramiki-glina.vercel.app';
+const UTM_HEADERS = ['номер', 'канал', 'размещение', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_content',
+  'страница', 'полная ссылка', 'короткая ссылка', 'адрес публикации', 'дата публикации', 'комментарий'];
+// номер, канал, размещение, source, medium, campaign, content, страница, комментарий
+const UTM_ROWS = [
+  ["U-01", "Instagram", "ссылка в шапке профиля", "instagram", "social", "gift_certificates_2026", "bio", "index.html", ""],
+  ["U-02", "Instagram", "автоответ под Reel (ManyChat)", "instagram", "social", "wheel_nov_2026", "reel_cup_01", "first-wheel.html", ""],
+  ["U-03", "Instagram", "автоответ, ветка «ПОДАРОК»", "instagram", "social", "gift_certificates_2026", "reel_cup_01_gift", "gift.html", ""],
+  ["U-04", "Instagram", "ссылка-стикер «Свободные места»", "instagram", "social", "wheel_nov_2026", "stories_01", "schedule.html", "content: первая сторис со стикером — stories_01 по правилу 5.1.4"],
+  ["U-05", "ВКонтакте", "пост в сообществе", "vk", "social", "gift_certificates_2026", "post_01", "gift.html", ""],
+  ["U-06", "ВКонтакте", "товар «Сертификат» в разделе «Товары»", "vk", "social", "gift_certificates_2026", "market_gift", "gift.html", "campaign: товар продаёт сертификаты к Новому году — та же кампания, что U-05"],
+  ["U-07", "Telegram", "пост в канале", "telegram", "social", "wheel_nov_2026", "post_01", "schedule.html", ""],
+  ["U-08", "Telegram", "пост в канале афиши города", "telegram", "referral", "gift_certificates_2026", "city_poster_01", "index.html", "content: первое размещение в чужом канале афиши"],
+  ["U-09", "YouTube", "описание видео «Первая чашка на круге»", "youtube", "social", "wheel_nov_2026", "video_cup_01", "classes.html", "content: первое видео о мастер-классе"],
+  ["U-10", "Блогер 1", "ссылка у партнёра", "blogger_one", "affiliate", "gift_certificates_2026", "stories_01", "gift.html", "source: ник однокурсника-блогера латиницей (заменить на настоящий); content — формат: сторис"],
+  ["U-11", "Блогер 2", "ссылка у партнёра", "blogger_two", "affiliate", "wheel_nov_2026", "post_01", "schedule.html", "source: ник однокурсника (заменить на настоящий); content — формат: пост"],
+  ["U-12", "Коробки", "QR-код на коробке с готовым изделием", "box_qr", "qr", "repeat_visit_2027", "pottery_box", "classes.html", "QR: docs/qr-u-12.png, афиша: docs/afisha.pdf"]
+];
+
+/* Запустить один раз: создаёт лист utm. Полная ссылка (столбец I) — формула из столбцов меток,
+   адрес сайта — в ячейке O1. Короткие ссылки, адрес и дата публикации заполняются вручную. */
+function setupUtmSheet() {
+  const ss = openSpreadsheet_();
+  const sheet = ss.getSheetByName('utm') || ss.insertSheet('utm');
+  sheet.clear();
+  sheet.getRange(1, 1, 1, UTM_HEADERS.length).setValues([UTM_HEADERS]).setFontWeight('bold').setBackground('#F3E6DA');
+  sheet.getRange('N1').setValue('адрес сайта');
+  sheet.getRange('O1').setValue(UTM_SITE);
+  sheet.setFrozenRows(1);
+
+  const values = UTM_ROWS.map(function (r) { return r.slice(0, 8).concat(['', '', '', '', r[8]]); });
+  sheet.getRange(2, 1, values.length, UTM_HEADERS.length).setNumberFormat('@').setValues(values);
+
+  // Оператор & вместо СЦЕПИТЬ: формула не зависит от разделителя аргументов (, или ;) в настройках таблицы
+  const formulas = values.map(function (r, i) {
+    const n = i + 2;
+    return ['=$O$1&"/"&H' + n + '&"?utm_source="&D' + n + '&"&utm_medium="&E' + n +
+      '&"&utm_campaign="&F' + n + '&"&utm_content="&G' + n];
+  });
+  sheet.getRange(2, 9, formulas.length, 1).setNumberFormat('General').setFormulas(formulas);
+  sheet.autoResizeColumns(1, 8);
+}
+
 /* Ручная проверка приёмника из редактора: Выполнить → testDoPost.
    Первая отправка запишет строку, вторая с тем же request_id вернёт ошибку (испытание И-05). */
 function testDoPost() {
