@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  <title>Расписание мастер-классов на 14 дней — свободные места — «Глина»</title>
+  <meta name="description" content="Расписание мастер-классов на гончарном круге на 14 дней: будни 12:00, 15:00, 19:00, выходные 11:00, 14:00, 17:00. Свободные места видны сразу.">
+  <link rel="canonical" href="https://tz-26-studiya-keramiki-glina.vercel.app/schedule.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Глина — студия керамики">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:url" content="https://tz-26-studiya-keramiki-glina.vercel.app/schedule.html">
+  <meta property="og:title" content="Расписание мастер-классов на 14 дней — свободные места — «Глина»">
+  <meta property="og:description" content="Расписание мастер-классов на гончарном круге на 14 дней: будни 12:00, 15:00, 19:00, выходные 11:00, 14:00, 17:00. Свободные места видны сразу.">
+  <meta property="og:image" content="https://tz-26-studiya-keramiki-glina.vercel.app/img/og/og-schedule.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#B5643A">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&amp;family=Inter:wght@400;600&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/analytics.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/prices.js" defer></script>
+  <script src="js/schedule.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html" aria-label="Глина — на главную">
+      <img src="favicon.svg" alt="" width="36" height="36">
+      <span class="logo-text"><strong>ГЛИНА</strong><small>студия керамики</small></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle-bar" aria-hidden="true"></span>
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Основное меню">
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="classes.html">Форматы</a></li>
+        <li><a href="schedule.html" aria-current="page">Расписание</a></li>
+        <li><a href="gift.html">Сертификаты</a></li>
+        <li><a href="gallery.html">Работы</a></li>
+        <li><a href="corporate.html">Корпоративам</a></li>
+        <li><a href="contacts.html">Запись</a></li>
+      </ul>
+      <a class="header-phone" href="tel:+79006262662" data-event="contact_click" data-contact-type="phone" data-page-section="header">+7 (900) 626-26-62</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow">Расписание</p>
+    <h1>Свободные места на 14 дней</h1>
+    <p class="lead">На одном мастер-классе до 10 мест на круге. Выберите время и число гостей — больше, чем осталось мест, выбрать нельзя.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:24px" aria-label="Расписание">
+  <div class="container">
+    <div class="field" style="max-width:360px">
+      <label for="s-format">Формат</label>
+      <select id="s-format">
+        <option value="wheel">Гончарный круг — 2 900 ₽</option>
+        <option value="date">Свидание на круге — 5 200 ₽ за пару</option>
+        <option value="handbuilding">Лепка руками — 2 400 ₽</option>
+        <option value="course">Курс 8 занятий — 18 000 ₽</option>
+        <option value="corporate">Корпоратив — 2 400 ₽, от 6 человек</option>
+      </select>
+    </div>
+    <p class="legend"><span>Будни: 12:00, 15:00, 19:00</span><span>Выходные: 11:00, 14:00, 17:00</span><span>Зачёркнутый слот — мест нет</span></p>
+    <ul class="days" id="days" aria-live="polite">
+      <li class="day"><p>Загружаем расписание…</p></li>
+    </ul>
+    <noscript><p class="note">Чтобы увидеть свободные места, включите JavaScript или позвоните: +7 (900) 626-26-62.</p></noscript>
+  </div>
+  <div class="booking" id="booking" hidden>
+    <div class="container booking-inner">
+      <p id="booking-text">Выбрано: —</p>
+      <div class="people">
+        <button type="button" id="b-minus" aria-label="Меньше гостей">−</button>
+        <output id="b-people" aria-live="polite">1</output>
+        <button type="button" id="b-plus" aria-label="Больше гостей">+</button>
+      </div>
+      <a class="btn btn-light" id="booking-cta" href="contacts.html" data-event="cta_click" data-button-name="schedule_book" data-page-section="schedule">Записаться</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <p class="footer-logo">ГЛИНА</p>
+      <p>Студия керамики и гончарного круга. Мастер-классы по гончарному кругу и лепке с 2021 года.</p>
+      <p>614 107, г. Новоозёрск, ул. Гончарная, д. 6, лофт 3</p>
+    </div>
+    <div>
+      <p class="footer-title">Связаться</p>
+      <p><a href="tel:+79006262662" data-event="contact_click" data-contact-type="phone" data-page-section="footer">+7 (900) 626-26-62</a><br>
+      <a href="mailto:hello@glina-studio.example" data-event="contact_click" data-contact-type="email" data-page-section="footer">hello@glina-studio.example</a></p>
+    </div>
+    <div>
+      <p class="footer-title">Мы в соцсетях</p>
+      <ul class="pill-list">
+        <li><a class="pill" href="https://www.instagram.com/glina_ceramics/" target="_blank" rel="noopener" data-event="social_click" data-network="instagram" data-page-section="footer">Instagram</a></li>
+        <li><a class="pill" href="https://vk.com/glina_ceramics" target="_blank" rel="noopener" data-event="social_click" data-network="vk" data-page-section="footer">ВКонтакте</a></li>
+        <li><a class="pill" href="https://t.me/glina_ceramics" target="_blank" rel="noopener" data-event="social_click" data-network="telegram" data-page-section="footer">Telegram</a></li>
+        <li><a class="pill" href="https://www.youtube.com/@glina_ceramics" target="_blank" rel="noopener" data-event="social_click" data-network="youtube" data-page-section="footer">YouTube</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© 2026 ООО «Студия Глина». ИНН 9926260026</p>
+    <p><a href="privacy.html">Политика конфиденциальности</a></p>
+  </div>
+</footer>
+</body>
+</html>
