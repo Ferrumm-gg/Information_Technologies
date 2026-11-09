@@ -36,7 +36,8 @@
 | Заявки | форма → приёмник Apps Script → лист `leads` таблицы «Glina — Leads» | работает с компьютера и с телефона; повтор `request_id` отклоняется |
 | UTM | реестр 12 ссылок: лист `utm` таблицы (полная ссылка — формулой) и [docs/utm.csv](docs/utm.csv); QR [docs/qr-u-12.png](docs/qr-u-12.png), афиша [docs/afisha.pdf](docs/afisha.pdf) | реестр и короткие ссылки готовы; публикаций нет |
 | Instagram, ManyChat | тексты — [docs/posts.md](docs/posts.md) | не настроено |
-| Отчёты, DataLens | шаблон записки — [docs/report.md](docs/report.md) | нет данных |
+| Отчёты | [docs/report.md](docs/report.md): атрибуция, оповещение, заявки по источникам и статусам, вывод и гипотеза; статусы проведены до attended / cancelled | отчёты GA4 пусты из-за блокировки Google-тега |
+| DataLens | — | не сделан: datalens.ru из сети исполнителя не открывается |
 
 ## Документы
 
