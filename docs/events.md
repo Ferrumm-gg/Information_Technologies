@@ -36,6 +36,8 @@
 
 ## Пользовательские параметры (Admin → Custom definitions, Event scope)
 
+Созданы 09.11.2026 в ресурсе «ГЛИНА — сайт», снимок — [`screens/ga4/custom-dimensions.jpg`](../screens/ga4/custom-dimensions.jpg).
+
 | Параметр | События |
 |---|---|
 | `button_name` | `cta_click` |
