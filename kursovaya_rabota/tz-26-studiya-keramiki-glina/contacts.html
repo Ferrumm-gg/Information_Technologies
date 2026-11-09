@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BGHCC4TERY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BGHCC4TERY');
+  </script>
+  <title>Запись на мастер-класс и заказ сертификата — студия «Глина»</title>
+  <meta name="description" content="Запишитесь на мастер-класс по гончарному кругу или закажите подарочный сертификат. Новоозёрск, ул. Гончарная, д. 6, лофт 3. Телефон, Telegram, WhatsApp.">
+  <link rel="canonical" href="https://tz-26-studiya-keramiki-glina.vercel.app/contacts.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Глина — студия керамики">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:url" content="https://tz-26-studiya-keramiki-glina.vercel.app/contacts.html">
+  <meta property="og:title" content="Запись на мастер-класс и заказ сертификата — студия «Глина»">
+  <meta property="og:description" content="Запишитесь на мастер-класс по гончарному кругу или закажите подарочный сертификат. Новоозёрск, ул. Гончарная, д. 6, лофт 3. Телефон, Telegram, WhatsApp.">
+  <meta property="og:image" content="https://tz-26-studiya-keramiki-glina.vercel.app/img/og/og-contacts.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#B5643A">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&amp;family=Inter:wght@400;600&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/analytics.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/prices.js" defer></script>
+  <script src="js/form.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html" aria-label="Глина — на главную">
+      <img src="favicon.svg" alt="" width="36" height="36">
+      <span class="logo-text"><strong>ГЛИНА</strong><small>студия керамики</small></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle-bar" aria-hidden="true"></span>
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Основное меню">
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="classes.html">Форматы</a></li>
+        <li><a href="schedule.html">Расписание</a></li>
+        <li><a href="gift.html">Сертификаты</a></li>
+        <li><a href="gallery.html">Работы</a></li>
+        <li><a href="corporate.html">Корпоративам</a></li>
+        <li><a href="contacts.html" aria-current="page">Запись</a></li>
+      </ul>
+      <a class="header-phone" href="tel:+79006262662" data-event="contact_click" data-contact-type="phone" data-page-section="header">+7 (900) 626-26-62</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow">Заявка и контакты</p>
+    <h1>Запись и заказ сертификата</h1>
+    <p class="lead">Оставьте заявку — администратор свяжется с вами, подтвердит время или пришлёт сертификат.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:24px">
+  <div class="container contacts-grid">
+    <form class="card lead-form" id="lead-form" novalidate aria-labelledby="form-title">
+      <h2 id="form-title">Заявка</h2>
+      <input type="hidden" name="request_id" value="">
+      <input type="hidden" name="utm_source" value="">
+      <input type="hidden" name="utm_medium" value="">
+      <input type="hidden" name="utm_campaign" value="">
+      <input type="hidden" name="utm_content" value="">
+
+      <div class="field">
+        <label for="f-lead_type">Что оформляем</label>
+        <select id="f-lead_type" name="lead_type" aria-describedby="err-lead_type">
+          <option value="class">Запись на мастер-класс</option>
+          <option value="gift">Подарочный сертификат</option>
+        </select>
+        <p class="field-error" id="err-lead_type" hidden></p>
+      </div>
+      <div class="field">
+        <label for="f-name">Имя</label>
+        <input type="text" id="f-name" name="name" autocomplete="name" maxlength="60" aria-describedby="err-name">
+        <p class="field-error" id="err-name" hidden></p>
+      </div>
+      <div class="field">
+        <label for="f-phone">Телефон</label>
+        <input type="tel" id="f-phone" name="phone" autocomplete="tel" inputmode="tel" placeholder="+7 900 000-00-00" aria-describedby="err-phone">
+        <p class="field-error" id="err-phone" hidden></p>
+      </div>
+      <div class="field">
+        <label for="f-email">E-mail <span class="optional">(необязательно)</span></label>
+        <input type="email" id="f-email" name="email" autocomplete="email" aria-describedby="err-email">
+        <p class="field-error" id="err-email" hidden></p>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="f-class_format">Формат</label>
+          <select id="f-class_format" name="class_format" aria-describedby="err-class_format">
+            <option value="wheel">Гончарный круг</option>
+            <option value="date">Свидание на круге</option>
+            <option value="handbuilding">Лепка руками</option>
+            <option value="course">Курс 8 занятий</option>
+            <option value="corporate">Корпоратив</option>
+          </select>
+          <p class="field-error" id="err-class_format" hidden></p>
+        </div>
+        <div class="field">
+          <label for="f-people">Гостей</label>
+          <select id="f-people" name="people" aria-describedby="err-people">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+          <p class="field-error" id="err-people" hidden></p>
+        </div>
+      </div>
+      <div class="field" id="field-slot">
+        <label for="f-slot">Дата и время <span class="optional">(из расписания)</span></label>
+        <input type="text" id="f-slot" name="slot" readonly placeholder="Выберите время в расписании" aria-describedby="err-slot slot-hint">
+        <p class="field-hint" id="slot-hint">Свободное время — на странице <a href="schedule.html">«Расписание»</a>. Можно оставить пустым: администратор предложит время.</p>
+        <p class="field-error" id="err-slot" hidden></p>
+      </div>
+      <p class="note" id="lead-sum">Стоимость: 2&nbsp;900&nbsp;₽</p>
+      <div class="field field-check">
+        <input type="checkbox" id="f-consent" name="consent" aria-describedby="err-consent">
+        <label for="f-consent">Я согласен(на) на обработку персональных данных в соответствии с <a href="privacy.html" target="_blank">политикой конфиденциальности</a></label>
+        <p class="field-error" id="err-consent" hidden></p>
+      </div>
+      <button class="btn btn-primary" type="submit" id="f-submit" data-event="cta_click" data-button-name="lead_form_send" data-page-section="lead_form">Отправить заявку</button>
+      <p class="form-status" id="form-status" role="alert" hidden></p>
+    </form>
+
+    <div class="contacts-aside">
+      <div class="card">
+        <h2 style="font-size:26px">Написать в мессенджер</h2>
+        <p class="muted">Администратор студии Кирилл Пахомов ответит на вопросы о записи и сертификатах.</p>
+        <div class="messengers">
+          <a class="btn btn-primary" href="https://t.me/glina_admin" target="_blank" rel="noopener" data-event="messenger_click" data-messenger="telegram">Telegram</a>
+          <a class="btn btn-ghost" href="https://wa.me/79006262662" target="_blank" rel="noopener" data-event="messenger_click" data-messenger="whatsapp">WhatsApp</a>
+        </div>
+      </div>
+      <div class="card">
+        <h2 style="font-size:26px">Контакты</h2>
+        <p><a class="big-link" href="tel:+79006262662" data-event="contact_click" data-contact-type="phone" data-page-section="contacts">+7 (900) 626-26-62</a><br>
+        <a href="mailto:hello@glina-studio.example" data-event="contact_click" data-contact-type="email" data-page-section="contacts">hello@glina-studio.example</a></p>
+        <p>614 107, г. Новоозёрск, ул. Гончарная, д. 6, лофт 3</p>
+        <p class="note">Будни: 12:00, 15:00, 19:00. Выходные: 11:00, 14:00, 17:00.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <p class="footer-logo">ГЛИНА</p>
+      <p>Студия керамики и гончарного круга. Мастер-классы по гончарному кругу и лепке с 2021 года.</p>
+      <p>614 107, г. Новоозёрск, ул. Гончарная, д. 6, лофт 3</p>
+    </div>
+    <div>
+      <p class="footer-title">Связаться</p>
+      <p><a href="tel:+79006262662" data-event="contact_click" data-contact-type="phone" data-page-section="footer">+7 (900) 626-26-62</a><br>
+      <a href="mailto:hello@glina-studio.example" data-event="contact_click" data-contact-type="email" data-page-section="footer">hello@glina-studio.example</a></p>
+    </div>
+    <div>
+      <p class="footer-title">Мы в соцсетях</p>
+      <ul class="pill-list">
+        <li><a class="pill" href="https://www.instagram.com/glina_ceramics/" target="_blank" rel="noopener" data-event="social_click" data-network="instagram" data-page-section="footer">Instagram</a></li>
+        <li><a class="pill" href="https://vk.com/glina_ceramics" target="_blank" rel="noopener" data-event="social_click" data-network="vk" data-page-section="footer">ВКонтакте</a></li>
+        <li><a class="pill" href="https://t.me/glina_ceramics_studio" target="_blank" rel="noopener" data-event="social_click" data-network="telegram" data-page-section="footer">Telegram</a></li>
+        <li><a class="pill" href="https://www.youtube.com/@glina_ceramics" target="_blank" rel="noopener" data-event="social_click" data-network="youtube" data-page-section="footer">YouTube</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© 2026 ООО «Студия Глина». ИНН 9926260026</p>
+    <p><a href="privacy.html">Политика конфиденциальности</a></p>
+  </div>
+</footer>
+</body>
+</html>
