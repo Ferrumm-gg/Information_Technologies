@@ -17,7 +17,7 @@
 | ВКонтакте, Telegram, YouTube | ещё не созданы |
 | Бланк сдачи | [kursovaya.md](kursovaya.md) |
 
-Ресурс GA4: ещё не создан — в HTML стоит заглушка `G-XXXXXXXXXX`.
+Ресурс GA4 «ГЛИНА — сайт»: `G-BGHCC4TERY`.
 Доступ Viewer к ресурсу GA4 выдан: ___ (e-mail Заказчика)
 
 ## Что сделано
@@ -28,7 +28,7 @@
 | Расписание | 14 дней, свободные места массивом в JS, неактивные слоты, ограничение по местам | готово, проверено |
 | Калькулятор | 5 форматов, «Свидание» за пару, корпоратив минимум 6 человек | готово, проверено (И-13) |
 | Сертификат | формат или сумма, имя и пожелание на макете, номер GL-2026-XXXX | готово, проверено |
-| События GA4 | 20 событий в `js/analytics.js` — [docs/events.md](docs/events.md) | в коде готово; в GA4 не проверено |
+| События GA4 | 20 событий в `js/analytics.js` — [docs/events.md](docs/events.md); ресурс `G-BGHCC4TERY` подключён | хиты доходят; DebugView и параметры — в работе |
 | Заявки | форма и приёмник `apps-script/Code.gs` | код готов; приёмник не развёрнут |
 | UTM | реестр 12 ссылок [docs/utm.csv](docs/utm.csv), QR [docs/qr-u-12.png](docs/qr-u-12.png), афиша [docs/afisha.pdf](docs/afisha.pdf) | подготовлено; публикаций нет |
 | Instagram, ManyChat | тексты — [docs/posts.md](docs/posts.md) | не настроено |
@@ -69,5 +69,5 @@ screens/ga4/  utm/  instagram/  reports/  explore/  datalens/  lighthouse/
 HTML, CSS, JavaScript · Google Analytics 4 · Google Apps Script и Google Таблицы · ManyChat ·
 Yandex DataLens · GitHub и Vercel.
 
-Не получилось: пока не подключены сервисы в аккаунтах — GA4, таблица и Apps Script, соцсети, ManyChat, DataLens; отчётов и снимков ещё нет.
+Не получилось: пока не подключены сервисы в аккаунтах — таблица и Apps Script, соцсети, ManyChat, DataLens; отчётов и снимков ещё нет.
 Нейросеть использовалась для: структуры и вёрстки страниц, JavaScript (расписание, калькулятор, сертификат, форма, события), приёмника Apps Script, иллюстраций, PDF и документации — см. [docs/prompts.md](docs/prompts.md).
