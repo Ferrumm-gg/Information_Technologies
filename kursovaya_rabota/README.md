@@ -1,5 +1,8 @@
 # Курсовая работа
 
+**ТЗ-26/2026 · студия керамики «Глина»** — проект в папке [`tz-26-studiya-keramiki-glina`](tz-26-studiya-keramiki-glina/README.md),
+бланк сдачи — [kursovaya.md](kursovaya.md). Сайт: https://tz-26-studiya-keramiki-glina.vercel.app
+
 Проект по техническому заданию компании в **отдельном репозитории**,
 описание работы и защита презентацией до 7 минут.
 

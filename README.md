@@ -20,6 +20,17 @@
 
 ## Курсовая работа
 
+**ТЗ-26/2026 · студия керамики «Глина»**
+
+| Что | Ссылка |
+|---|---|
+| Папка проекта | [kursovaya_rabota/tz-26-studiya-keramiki-glina](kursovaya_rabota/tz-26-studiya-keramiki-glina/README.md) |
+| Бланк сдачи | [kursovaya_rabota/kursovaya.md](kursovaya_rabota/kursovaya.md) |
+| Сайт | https://tz-26-studiya-keramiki-glina.vercel.app |
+| Аналитическая записка | [docs/report.md](kursovaya_rabota/tz-26-studiya-keramiki-glina/docs/report.md) |
+| Презентация | [glina-zashita.pdf](kursovaya_rabota/tz-26-studiya-keramiki-glina/presentation/glina-zashita.pdf) |
+| Отдельный репозиторий проекта | https://github.com/Ferrumm-gg/tz-26-studiya-keramiki-glina |
+
 Проект по техническому заданию компании в отдельном репозитории, описание
 работы и защита презентацией до 7 минут. Порядок сдачи, шаблоны README
 и описания, план слайдов — в [`kursovaya_rabota`](kursovaya_rabota/README.md).
