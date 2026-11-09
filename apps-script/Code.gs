@@ -213,8 +213,16 @@ const UTM_ROWS = [
   ["U-12", "Коробки", "QR-код на коробке с готовым изделием", "box_qr", "qr", "repeat_visit_2027", "pottery_box", "classes.html", "QR: docs/qr-u-12.png, афиша: docs/afisha.pdf"]
 ];
 
+// Короткие ссылки clck.ru для ВКонтакте и Telegram (5.3); переход сохраняет все метки
+const UTM_SHORT = {
+  'U-05': 'https://clck.ru/3WvMG3',
+  'U-06': 'https://clck.ru/3WvMG5',
+  'U-07': 'https://clck.ru/3WvMG8',
+  'U-08': 'https://clck.ru/3WvMGE'
+};
+
 /* Запустить один раз: создаёт лист utm. Полная ссылка (столбец I) — формула из столбцов меток,
-   адрес сайта — в ячейке O1. Короткие ссылки, адрес и дата публикации заполняются вручную. */
+   адрес сайта — в ячейке O1. Адрес и дата публикации заполняются вручную. */
 function setupUtmSheet() {
   const ss = openSpreadsheet_();
   const sheet = ss.getSheetByName('utm') || ss.insertSheet('utm');
@@ -224,7 +232,7 @@ function setupUtmSheet() {
   sheet.getRange('O1').setValue(UTM_SITE);
   sheet.setFrozenRows(1);
 
-  const values = UTM_ROWS.map(function (r) { return r.slice(0, 8).concat(['', '', '', '', r[8]]); });
+  const values = UTM_ROWS.map(function (r) { return r.slice(0, 8).concat(['', UTM_SHORT[r[0]] || '', '', '', r[8]]); });
   sheet.getRange(2, 1, values.length, UTM_HEADERS.length).setNumberFormat('@').setValues(values);
 
   // Оператор & вместо СЦЕПИТЬ: формула не зависит от разделителя аргументов (, или ;) в настройках таблицы
