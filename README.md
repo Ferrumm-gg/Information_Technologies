@@ -13,13 +13,15 @@
 | Репозиторий | [Ferrumm-gg/tz-26-studiya-keramiki-glina](https://github.com/Ferrumm-gg/tz-26-studiya-keramiki-glina) |
 | Таблица заявок «Glina — Leads» | [Google Таблица](https://docs.google.com/spreadsheets/d/16WRAn4umBiwx8ZZqlG9cZMUbC_WKkX65bWT9Z_J17l8/edit) (доступ по приглашению) |
 | Дашборд DataLens | ещё не создан |
-| Instagram и Reel с автоответами | ещё не созданы |
+| Instagram и Reel с автоответами | ссылки U-01…U-04 в реестре; автоответы ManyChat не настроены |
 | Telegram | [@glina_ceramics_studio](https://t.me/glina_ceramics_studio) — канал студии |
-| ВКонтакте, YouTube | ещё не созданы |
+| ВКонтакте, YouTube | ссылки U-05, U-06, U-09 в реестре (страницы не создавались — см. ниже) |
 | Бланк сдачи | [kursovaya.md](kursovaya.md) |
 | Презентация к защите | [presentation/glina-zashita.pdf](presentation/glina-zashita.pdf) · [текст выступления](presentation/prezentaciya.md) |
 
 Ресурс GA4 «ГЛИНА — сайт»: `G-BGHCC4TERY`.
+
+**Соцсети.** Преподаватель (Максим Николаевич, переписка 28.10.2026) разрешил не создавать настоящие страницы во всех соцсетях: достаточно UTM-ссылок в реестре. Канал Telegram сделан по-настоящему, остальные размещения — подготовленные ссылки реестра.
 Доступ Viewer к ресурсу GA4 выдан: ___ (e-mail Заказчика)
 
 ## Что сделано
@@ -72,5 +74,5 @@ presentation/     презентация PDF и текст выступлени�
 HTML, CSS, JavaScript · Google Analytics 4 · Google Apps Script и Google Таблицы · ManyChat ·
 Yandex DataLens · GitHub и Vercel.
 
-Не получилось: пока не подключены сервисы в аккаунтах — соцсети, ManyChat, DataLens; отчётов и снимков ещё нет.
+Не получилось: страницы ВКонтакте, YouTube и Instagram не создавались (разрешено преподавателем, сделаны UTM-ссылки); не настроены ManyChat и DataLens; отчётов GA4 пока нет — из домашней сети заблокирован сервер Google-тега, данные идут только с мобильного интернета.
 Нейросеть использовалась для: структуры и вёрстки страниц, JavaScript (расписание, калькулятор, сертификат, форма, события), приёмника Apps Script, иллюстраций, PDF и документации — см. [docs/prompts.md](docs/prompts.md).
