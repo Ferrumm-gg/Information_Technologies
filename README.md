@@ -9,7 +9,7 @@
 
 | Что | Ссылка |
 |---|---|
-| Сайт на Vercel | ещё не опубликован — шаг 1 в [docs/setup.md](docs/setup.md) |
+| Сайт на Vercel | [tz-26-studiya-keramiki-glina.vercel.app](https://tz-26-studiya-keramiki-glina.vercel.app/) |
 | Репозиторий | [Ferrumm-gg/tz-26-studiya-keramiki-glina](https://github.com/Ferrumm-gg/tz-26-studiya-keramiki-glina) |
 | Таблица заявок «Glina — Leads» | ещё не создана |
 | Дашборд DataLens | ещё не создан |
@@ -24,7 +24,7 @@
 
 | Часть | Результат | Статус |
 |---|---|---|
-| Сайт | 10 страниц и 404, HTML/CSS/JS без сборки, адаптив 375/768/1280, OG-теги, значок | готово, проверено локально |
+| Сайт | 10 страниц и 404, HTML/CSS/JS без сборки, адаптив 375/768/1280, OG-теги, значок | опубликован на Vercel, обновляется после push в `main` |
 | Расписание | 14 дней, свободные места массивом в JS, неактивные слоты, ограничение по местам | готово, проверено |
 | Калькулятор | 5 форматов, «Свидание» за пару, корпоратив минимум 6 человек | готово, проверено (И-13) |
 | Сертификат | формат или сумма, имя и пожелание на макете, номер GL-2026-XXXX | готово, проверено |
@@ -69,5 +69,5 @@ screens/ga4/  utm/  instagram/  reports/  explore/  datalens/  lighthouse/
 HTML, CSS, JavaScript · Google Analytics 4 · Google Apps Script и Google Таблицы · ManyChat ·
 Yandex DataLens · GitHub и Vercel.
 
-Не получилось: пока не подключены сервисы в аккаунтах — Vercel, GA4, таблица и Apps Script, соцсети, ManyChat, DataLens; отчётов и снимков ещё нет.
+Не получилось: пока не подключены сервисы в аккаунтах — GA4, таблица и Apps Script, соцсети, ManyChat, DataLens; отчётов и снимков ещё нет.
 Нейросеть использовалась для: структуры и вёрстки страниц, JavaScript (расписание, калькулятор, сертификат, форма, события), приёмника Apps Script, иллюстраций, PDF и документации — см. [docs/prompts.md](docs/prompts.md).

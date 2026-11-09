@@ -3,7 +3,9 @@
 Код сайта готов. Чтобы проект заработал полностью, Исполнитель выполняет шаги ниже в своих аккаунтах
 (GitHub, Vercel, Google, Instagram, Яндекс). После каждого шага — коммит и push в `main`.
 
-## 1. Публикация на Vercel (раздел 3.4)
+## 1. Публикация на Vercel (раздел 3.4) — сделано
+
+Сайт: https://tz-26-studiya-keramiki-glina.vercel.app/ (проект Vercel `tz-26-studiya-keramiki-glina`, обновляется после каждого push в `main`).
 
 1. vercel.com → Add New → Project → импортировать репозиторий `tz-26-studiya-keramiki-glina`.
 2. Framework Preset: **Other**, Build Command пустой, Output Directory пустой → Deploy.

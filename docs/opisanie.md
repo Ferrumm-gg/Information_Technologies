@@ -31,7 +31,7 @@
 
 ## 4. Что осталось сделать в аккаунтах
 
-Ресурс GA4, таблица и развёртывание Apps Script, публикация на Vercel, соцсети и ManyChat, отчёты и DataLens —
+Сайт опубликован: https://tz-26-studiya-keramiki-glina.vercel.app/. Ресурс GA4, таблица и развёртывание Apps Script, соцсети и ManyChat, отчёты и DataLens —
 по шагам [setup.md](setup.md). До этого в HTML стоит заглушка `G-XXXXXXXXXX`, а форма сообщает,
 что приём заявок ещё не подключён.
 

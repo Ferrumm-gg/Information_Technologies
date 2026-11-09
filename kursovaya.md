@@ -9,7 +9,7 @@
 | Что | Ссылка |
 |---|---|
 | Репозиторий проекта | https://github.com/Ferrumm-gg/tz-26-studiya-keramiki-glina |
-| Сайт на Vercel | ещё не опубликован |
+| Сайт на Vercel | https://tz-26-studiya-keramiki-glina.vercel.app/ |
 | Описание работы `docs/opisanie.md` | [opisanie.md](docs/opisanie.md) |
 | Презентация к защите | ещё не сделана |
 | Таблица заявок (доступ на просмотр) | ещё не создана |
@@ -25,7 +25,7 @@
 - [x] 20 событий GA4 в `js/analytics.js`, таблица `docs/events.md`
 - [x] Форма заявки и приёмник `apps-script/Code.gs`
 - [x] Реестр UTM, QR-код U-12, афиша A4
-- [ ] Публикация на Vercel
+- [x] Публикация на Vercel
 - [ ] Ресурс GA4, DebugView, пользовательские параметры, ключевые события
 - [ ] Таблица «Glina — Leads», развёртывание Apps Script
 - [ ] Публикации в 4 соцсетях, короткие ссылки, проверка ссылок
