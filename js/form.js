@@ -4,7 +4,7 @@
   'use strict';
 
   // Адрес веб-приложения Apps Script (Развернуть → Веб-приложение → URL). Пусто — приёмник ещё не подключён
-  var ENDPOINT = '';
+  var ENDPOINT = 'https://script.google.com/macros/s/AKfycby1pHpLc3CZZSEYhjfRm38qCSL_a9eK5YZVPwWYhcsOm5f8Qy2g1DigxKxrtIbLxzrF/exec';
 
   var form = document.getElementById('lead-form');
   if (!form) return;

@@ -12,7 +12,7 @@
 | Сайт на Vercel | https://tz-26-studiya-keramiki-glina.vercel.app/ |
 | Описание работы `docs/opisanie.md` | [opisanie.md](docs/opisanie.md) |
 | Презентация к защите | ещё не сделана |
-| Таблица заявок (доступ на просмотр) | ещё не создана |
+| Таблица заявок (доступ на просмотр) | https://docs.google.com/spreadsheets/d/16WRAn4umBiwx8ZZqlG9cZMUbC_WKkX65bWT9Z_J17l8/edit |
 | Reel с автоответом | ещё не создан |
 
 **Measurement ID ресурса GA4:** G-BGHCC4TERY
@@ -27,7 +27,7 @@
 - [x] Реестр UTM, QR-код U-12, афиша A4
 - [x] Публикация на Vercel
 - [ ] Ресурс GA4, DebugView, пользовательские параметры, ключевые события
-- [ ] Таблица «Glina — Leads», развёртывание Apps Script
+- [x] Таблица «Glina — Leads», развёртывание Apps Script
 - [ ] Публикации в 4 соцсетях, короткие ссылки, проверка ссылок
 - [ ] ManyChat: ветки ГЛИНА и ПОДАРОК
 - [ ] Отчёты и исследования GA4, DataLens, аналитическая записка
