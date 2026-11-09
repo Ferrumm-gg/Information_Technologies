@@ -14,7 +14,8 @@
 | Таблица заявок «Glina — Leads» | [Google Таблица](https://docs.google.com/spreadsheets/d/16WRAn4umBiwx8ZZqlG9cZMUbC_WKkX65bWT9Z_J17l8/edit) (доступ по приглашению) |
 | Дашборд DataLens | ещё не создан |
 | Instagram и Reel с автоответами | ещё не созданы |
-| ВКонтакте, Telegram, YouTube | ещё не созданы |
+| Telegram | [@glina_ceramics_studio](https://t.me/glina_ceramics_studio) — канал студии |
+| ВКонтакте, YouTube | ещё не созданы |
 | Бланк сдачи | [kursovaya.md](kursovaya.md) |
 | Презентация к защите | [presentation/glina-zashita.pdf](presentation/glina-zashita.pdf) · [текст выступления](presentation/prezentaciya.md) |
 
