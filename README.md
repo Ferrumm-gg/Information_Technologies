@@ -30,7 +30,7 @@
 | Сертификат | формат или сумма, имя и пожелание на макете, номер GL-2026-XXXX | готово, проверено |
 | События GA4 | 20 событий в `js/analytics.js` — [docs/events.md](docs/events.md); ресурс `G-BGHCC4TERY` подключён | хиты доходят; DebugView и параметры — в работе |
 | Заявки | форма → приёмник Apps Script → лист `leads` таблицы «Glina — Leads» | работает; повтор `request_id` отклоняется |
-| UTM | реестр 12 ссылок [docs/utm.csv](docs/utm.csv), QR [docs/qr-u-12.png](docs/qr-u-12.png), афиша [docs/afisha.pdf](docs/afisha.pdf) | подготовлено; публикаций нет |
+| UTM | реестр 12 ссылок: лист `utm` таблицы (полная ссылка — формулой) и [docs/utm.csv](docs/utm.csv); QR [docs/qr-u-12.png](docs/qr-u-12.png), афиша [docs/afisha.pdf](docs/afisha.pdf) | реестр готов; коротких ссылок и публикаций нет |
 | Instagram, ManyChat | тексты — [docs/posts.md](docs/posts.md) | не настроено |
 | Отчёты, DataLens | шаблон записки — [docs/report.md](docs/report.md) | нет данных |
 
