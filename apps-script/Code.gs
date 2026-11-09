@@ -4,14 +4,15 @@
  * таблицы «Glina — Leads». Ответ: {"ok": true} или {"ok": false, "error": "..."}.
  *
  * Установка (подробно — docs/setup.md, шаг 3):
- * 1. Таблица «Glina — Leads» → Расширения → Apps Script → вставить этот код.
- * 2. SPREADSHEET_ID можно не вписывать: без него берётся таблица, к которой привязан скрипт.
+ * 1. script.google.com → Новый проект «Glina — приёмник заявок» → вставить этот код.
+ * 2. В SPREADSHEET_ID — ID таблицы «Glina — Leads» (из её адреса).
  * 3. Запустить setupSheet() один раз — создаст заголовки, списки и подсветку.
  * 4. Развернуть → Новое развёртывание → Веб-приложение:
  *    «Выполнять как: я», «Доступ: все». Полученный URL вставить в js/form.js (ENDPOINT).
  */
 
-const SPREADSHEET_ID = ''; // пусто — таблица, к которой привязан скрипт
+// ID таблицы «Glina — Leads» (проект Apps Script отдельный, не привязан к таблице)
+const SPREADSHEET_ID = '16WRAn4umBiwx8ZZqlG9cZMUbC_WKkX65bWT9Z_J17l8';
 const SHEET_NAME = 'leads';
 
 const HEADERS = ['request_id', 'created_at', 'name', 'phone', 'email', 'lead_type', 'class_format', 'people',
