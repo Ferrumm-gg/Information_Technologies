@@ -251,6 +251,21 @@ function setupUtmSheet() {
   sheet.autoResizeColumns(1, 8);
 }
 
+/* Раздел 6.4: проводит тестовую заявку по статусам до attended, другую закрывает cancelled.
+   Каждый шаг пишется в журнал выполнения. */
+function runTestStatuses() {
+  const sheet = getSheet_();
+  const names = sheet.getRange(2, 3, sheet.getLastRow() - 1, 1).getValues().map(function (r) { return r[0]; });
+  const setStatus = function (name, status) {
+    const i = names.indexOf(name);
+    if (i === -1) throw new Error('Нет заявки ' + name);
+    sheet.getRange(i + 2, 14).setValue(status);
+    console.log(name + ' → ' + status);
+  };
+  ['confirmed', 'paid', 'attended'].forEach(function (st) { setStatus('Тест U-05', st); SpreadsheetApp.flush(); });
+  setStatus('Тест редактора', 'cancelled');
+}
+
 /* Ручная проверка приёмника из редактора: Выполнить → testDoPost.
    Первая отправка запишет строку, вторая с тем же request_id вернёт ошибку (испытание И-05). */
 function testDoPost() {
