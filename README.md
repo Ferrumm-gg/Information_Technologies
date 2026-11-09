@@ -16,6 +16,7 @@
 | Instagram и Reel с автоответами | ещё не созданы |
 | ВКонтакте, Telegram, YouTube | ещё не созданы |
 | Бланк сдачи | [kursovaya.md](kursovaya.md) |
+| Презентация к защите | [presentation/glina-zashita.pdf](presentation/glina-zashita.pdf) · [текст выступления](presentation/prezentaciya.md) |
 
 Ресурс GA4 «ГЛИНА — сайт»: `G-BGHCC4TERY`.
 Доступ Viewer к ресурсу GA4 выдан: ___ (e-mail Заказчика)
@@ -61,7 +62,8 @@ js/calc.js  js/schedule.js  js/gift.js  js/gallery.js  js/corporate.js  js/form.
 img/  files/corporate-glina.pdf
 apps-script/Code.gs
 docs/
-screens/ga4/  utm/  instagram/  reports/  explore/  datalens/  lighthouse/
+screens/site/  ga4/  utm/  instagram/  reports/  explore/  datalens/  lighthouse/
+presentation/     презентация PDF и текст выступления
 ```
 
 ## Технологии

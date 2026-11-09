@@ -11,7 +11,7 @@
 | Репозиторий проекта | https://github.com/Ferrumm-gg/tz-26-studiya-keramiki-glina |
 | Сайт на Vercel | https://tz-26-studiya-keramiki-glina.vercel.app/ |
 | Описание работы `docs/opisanie.md` | [opisanie.md](docs/opisanie.md) |
-| Презентация к защите | ещё не сделана |
+| Презентация к защите | [presentation/glina-zashita.pdf](presentation/glina-zashita.pdf), текст выступления — [prezentaciya.md](presentation/prezentaciya.md) |
 | Таблица заявок (доступ на просмотр) | https://docs.google.com/spreadsheets/d/16WRAn4umBiwx8ZZqlG9cZMUbC_WKkX65bWT9Z_J17l8/edit |
 | Reel с автоответом | ещё не создан |
 
@@ -31,7 +31,7 @@
 - [ ] Публикации в 4 соцсетях, короткие ссылки, проверка ссылок
 - [ ] ManyChat: ветки ГЛИНА и ПОДАРОК
 - [ ] Отчёты и исследования GA4, DataLens, аналитическая записка
-- [ ] Презентация к защите
+- [x] Презентация к защите
 
 **Не получилось:** сервисы в аккаунтах пока не подключены (см. `docs/setup.md`).
 **ИИ:** Claude — сайт, скрипты, приёмник, иллюстрации и документы; журнал в `docs/prompts.md`.
